@@ -58,4 +58,74 @@ html {
 
 body {
   font-family: "IBM Plex Sans";
+  padding: 30px;
+}
+
+/*POSITION - использовать с осторожностью*/
+
+/* position: static; - по умолчанию 
+*/
+
+/* position: relative - положение элемента устанавливается относительно его первоначального положения в коде 
+ 
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+   Значения можно указывать в процентах и отрицательных значениях 
+ z-index: 0 (по умолчанию) - управляет наложением элементов */
+
+/* position: absolute - вырывается из потока и место не бронирует
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+	width: 100%;
+
+	   Значения можно указывать в процентах и отрицательных значениях 
+ z-index: 0 (по умолчанию) - управляет наложением элементов 
+ */
+
+/* 
+ position: fixed; - вырывается из потока и фиксируется по окну браузера и место не бронирует
+ width: 100%;
+  z-index: 0;
+ */
+
+/* 
+ position: sticky; (липкий) - гибрид между- position: static и position: fixed;
+ 
+ position: fixed; + js = можно добться такого эфекта.
+ */
+
+.block {
+  border: 5px solid red;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.block div {
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.block__1 {
+  background-color: rgb(234, 230, 109);
+}
+
+.block__2 {
+  background-color: #ccc;
+}
+
+.block__3 {
+  background-color: #416cd2;
+}
+
+.block__4 {
+  background-color: rgb(234, 230, 109);
 }
